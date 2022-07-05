@@ -1,0 +1,9 @@
+TableFor2 | 37
+TableFor4 | 10
+TableFor8 | 1
+TableFor10 | 1
+Server | John | 1
+Server | aaa | 11
+Chef | Chad | 1
+Chef | Rose | 3
+Manager | Steve | 10

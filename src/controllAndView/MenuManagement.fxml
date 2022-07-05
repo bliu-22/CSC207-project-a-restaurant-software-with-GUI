@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.MenuManagementController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" minHeight="400.0" prefWidth="240.0" spacing="5.0">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <children>
+                  <Label text="Menu">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="menuList" minHeight="200.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <HBox alignment="CENTER" prefHeight="100.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="line" layoutX="10.0" layoutY="10.0" minHeight="60.0" promptText="e.g Hamburger | 8.88 | flour:1 ; beef:1 ; lettuce:2 ; tomato:1" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="addToMenu" minHeight="60.0" minWidth="50.0" mnemonicParsing="false" onAction="#addButtonPushed" prefHeight="60.0" text="Add to Menu">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></Button>
+                        <Button fx:id="removeCourse" layoutX="533.0" layoutY="36.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#removeButtonPushed" prefHeight="60.0" text="Remove Selected">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="feedback" layoutX="10.0" layoutY="473.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Refer to this format: name | price | material1:quantity ; material2;quantity">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

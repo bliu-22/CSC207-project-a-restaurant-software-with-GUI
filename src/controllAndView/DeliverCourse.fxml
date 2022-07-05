@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.DeliverCourseController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="128.0" minHeight="8.0" prefHeight="61.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="288.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="yes" mnemonicParsing="false" onAction="#yesButtonPushed" text="Yes" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Button fx:id="no" mnemonicParsing="false" onAction="#noButtonPushed" text="No" />
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Label text="Is this course accepted?" />
+         </children>
+      </StackPane>
+      <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="64.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="246.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.0" minWidth="10.0" prefWidth="367.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <TextArea fx:id="message" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="303.0" promptText="Left Any message here (only for rejecting.)" />
+               </children>
+            </StackPane>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <content>
+                  <Label fx:id="courseInfo" />
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

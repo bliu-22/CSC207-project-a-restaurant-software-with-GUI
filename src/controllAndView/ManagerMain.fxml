@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.ManagerMainController">
+   <children>
+      <VBox>
+         <children>
+              <HBox minWidth="-Infinity" prefWidth="200.0" spacing="10.0">
+      
+                                          <padding>
+                      <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+                  </padding>
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="20.0" prefWidth="60.0" text="&lt;- Back" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+              </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" minHeight="400.0" prefWidth="240.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER" minHeight="30.0">
+                           <children>
+                              <RadioButton fx:id="switchToServers" mnemonicParsing="false" onAction="#switchToServersPushed" selected="true" text="Servers">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ToggleGroup" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="switchToChefs" mnemonicParsing="false" onAction="#switchToChefsPushed" text="Chefs" toggleGroup="$ToggleGroup" />
+                           </children>
+                        </HBox>
+                          <ListView fx:id="staffList" minHeight="200.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                          </ListView>
+                          <HBox alignment="CENTER" prefHeight="100.0" spacing="5.0">
+                              <children>
+                              <TextField fx:id="staffName" promptText="Enter Name" />
+                              <TextField fx:id="staffId" layoutX="10.0" layoutY="10.0" promptText="Enter ID" />
+                                  <Button fx:id="add" minWidth="40.0" mnemonicParsing="false" onAction="#addButtonPushed" text="Add" />
+                              </children>
+                              <opaqueInsets>
+                                  <Insets />
+                              </opaqueInsets>
+                          </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" minHeight="400.0" minWidth="150.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="totalRev" alignment="CENTER" />
+                        <Label fx:id="feedback" />
+                        <Button fx:id="invManagement" minWidth="150.0" mnemonicParsing="false" onAction="#invManagementButtonPushed" text="Inventory Management" />
+                        <Button fx:id="menuManagement" layoutX="10.0" layoutY="149.0" minWidth="150.0" mnemonicParsing="false" onAction="#menuManagementButtonPushed" text="Menu Management" />
+                        <Button fx:id="trackOrder" layoutX="10.0" layoutY="10.0" minWidth="150.0" mnemonicParsing="false" onAction="#trackOrderButtonPushed" text="Undelivered Order" />
+                        <Button fx:id="tableManagement" layoutX="10.0" layoutY="35.0" minWidth="150.0" mnemonicParsing="false" onAction="#tableManagementButtonPushed" text="Table Management" />
+                        <Button fx:id="remove" minWidth="150.0" mnemonicParsing="false" onAction="#removeButtonPushed" text="Remove Employee" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" minHeight="400.0" prefWidth="240.0" spacing="15.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" minWidth="200.0" text="Payment Records">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TreeView fx:id="paymentRecords" minHeight="200.0" prefWidth="200.0" />
+                        <Button fx:id="checkDetail" mnemonicParsing="false" onAction="#checkDetailButtonPushed" text="Check Detail" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

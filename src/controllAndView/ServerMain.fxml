@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.ServerMainController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="246.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="10.0" prefWidth="354.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="232.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="status" text="Status" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="deliver" mnemonicParsing="false" onAction="#deliverButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Deliver" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="proceed" mnemonicParsing="false" onAction="#proceedButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Proceed" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="addCustomer" mnemonicParsing="false" onAction="#addCustomerButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Add Customer" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+                     <children>
+                        <Button fx:id="receive" mnemonicParsing="false" onAction="#receiveButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Recieve" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="getBill" mnemonicParsing="false" onAction="#getBillButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Get Bill" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="6">
+                     <children>
+                        <Button fx:id="orderStatus" mnemonicParsing="false" onAction="#orderStatusButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Order Status" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="7">
+                     <children>
+                        <Button fx:id="logOut" mnemonicParsing="false" onAction="#logOutButtonPushed" prefHeight="31.0" prefWidth="116.0" text="Log out" />
+                     </children>
+                  </StackPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <TreeView fx:id="tableLists" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="308.0" />
+         </children>
+      </StackPane>
+   </children>
+</GridPane>

@@ -1,0 +1,38 @@
+Apr 03, 2018 3:24:24 PM model.Employee receiveIngredient
+INFO: Steve received 1 units of pork
+Apr 03, 2018 3:26:22 PM model.Employee receiveIngredient
+INFO: Steve received 320 units of coke
+Apr 03, 2018 3:26:37 PM model.Manager addToMenu
+WARNING: Not valid input for course !!
+Apr 03, 2018 3:40:02 PM model.Employee receiveIngredient
+INFO: Steve received 3 units of mushroom
+Apr 03, 2018 3:45:33 PM model.Manager addToMenu
+WARNING: Not valid input for course !!
+Apr 03, 2018 3:45:43 PM model.Manager addToMenu
+WARNING: Not valid input for course !!
+Apr 03, 2018 3:57:32 PM model.Employee receiveIngredient
+INFO: Steve received 1 units of iphone
+Jun 01, 2022 7:13:59 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:10 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:11 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:12 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:12 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:48 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:50 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:14:50 PM model.Server addToOrder
+INFO: Hamburger is not available
+Jun 01, 2022 7:15:01 PM model.Server finishOrdering
+INFO: Customer 2 on table 1 ordered Meatballs
+Jun 01, 2022 7:16:08 PM model.Chef startCooking
+INFO: Chef Chad started cooking Meatballs for table 1
+Jun 01, 2022 7:16:15 PM model.Chef finishCooking
+INFO: Meatballs for table1 is cooked by Chef Chad and waiting for delivery.
+Jun 01, 2022 7:17:15 PM model.Table acceptCourse
+INFO: Meatballs for customer 2 on table 1 is accepted.

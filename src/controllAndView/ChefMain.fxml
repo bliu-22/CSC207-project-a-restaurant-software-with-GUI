@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.ChefMainController">
+   <children>
+      <VBox prefHeight="217.0" prefWidth="360.0">
+         <children>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="30.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chef's Name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="chefName" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="106.3330078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="40.0" prefHeight="30.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chef's ID:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="chefID" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="106.3330078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="80.0" prefHeight="20.0" prefWidth="360.0">
+               <children>
+                  <Label text="Wait List">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Returned List">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="65.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="130.0" prefHeight="245.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <children>
+                  <ListView fx:id="waitList" prefHeight="200.0" prefWidth="114.0">
+                     <HBox.margin>
+                        <Insets left="50.0" right="30.0" />
+                     </HBox.margin>
+                  </ListView>
+                  <ListView fx:id="returnedList" prefHeight="200.0" prefWidth="114.0" />
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="130.0" prefHeight="30.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#startDishWaitListButtonPushed" prefHeight="26.0" prefWidth="81.0" text="Start Dish">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#startDishReturnedListButtonPushed" prefHeight="26.0" prefWidth="81.0" text="Start Dish">
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </Button>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="435.0" prefHeight="30.0" prefWidth="360.0">
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="26.0" prefWidth="81.0" text="Back">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="540.0" prefWidth="360.0">
+         <children>
+            <HBox layoutX="10.0" layoutY="40.0" prefHeight="20.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Table Number:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="tableNumber" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="115.0" prefHeight="20.0" prefWidth="360.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Number:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="customerNumber" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="115.0" prefHeight="20.0" prefWidth="360.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Name:" wrappingWidth="85.06640625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="dishName" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reasons and Comments for Returned Course:">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="115.0" prefHeight="40.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <children>
+                  <TextFlow fx:id="returnedCourseComments" prefHeight="40.0" prefWidth="290.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextFlow>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="155.0" prefHeight="225.0" prefWidth="360.0">
+               <children>
+                  <TableView fx:id="ingredientUnitsTableView" prefHeight="225.0" prefWidth="290.0">
+                     <columns>
+                        <TableColumn fx:id="ingredient" prefWidth="145.0" text="Ingredient" />
+                        <TableColumn fx:id="units" prefWidth="130.0" text="Units" />
+                     </columns>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="40.0" prefHeight="30.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#completeDishButtonPushed" prefHeight="26.0" prefWidth="150.0" text="Complete Dish ">
+                     <HBox.margin>
+                        <Insets left="95.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="435.0" prefHeight="30.0" prefWidth="360.0">
+               <children>
+                  <Button fx:id="receiveIngredient" mnemonicParsing="false" onAction="#receiveIngredientButtonPushed" prefHeight="26.0" prefWidth="150.0" text="Receive Ingredient">
+                     <HBox.margin>
+                        <Insets left="160.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

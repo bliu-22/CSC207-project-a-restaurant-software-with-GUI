@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.ServerRequirementController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="281.0" minHeight="10.0" prefHeight="266.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ListView fx:id="existingList" onMouseClicked="#refreshAvailableList" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+      <ListView fx:id="availableList" onMouseClicked="#refreshExistingList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="remove" mnemonicParsing="false" onAction="#removeButtonPushed" prefHeight="31.0" prefWidth="107.0" text="Remove" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonPushed" prefHeight="31.0" prefWidth="107.0" text="Add" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Label text="Ingredients in this course" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label text="Ingredients Available" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="42.0" prefWidth="300.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="message" />
+         </children>
+      </StackPane>
+      <Button fx:id="back" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="31.0" prefWidth="72.0" text="&lt; Back" />
+   </children>
+</GridPane>

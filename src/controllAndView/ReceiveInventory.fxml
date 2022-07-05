@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllAndView.ReceiveInventoryController">
+   <children>
+      <HBox prefHeight="31.0" prefWidth="600.0">
+         <children>
+            <Label minWidth="60.0" text="Ingredient Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="ingredientName">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="150.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="600.0">
+         <children>
+            <Label minWidth="25.0" text="Ingredient Quantity:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="ingredientQuantity">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="292.0" prefHeight="32.0" prefWidth="600.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="feedBack" textFill="RED">
+               <HBox.margin>
+                  <Insets left="120.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="32.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#closeButtonPushed" prefHeight="32.0" prefWidth="120.0" text="Cancel">
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="addToInventory" mnemonicParsing="false" onAction="#addToInventoryButtonPushed" prefHeight="32.0" prefWidth="120.0" text="Add to inventory">
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>

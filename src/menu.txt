@@ -1,0 +1,2 @@
+Hamburger | 8.88 | flour:1 ; tomato:1 ; pork:1 ; lettuce:1
+Meatballs | 3.58 | tomato:1 ; pork:1
