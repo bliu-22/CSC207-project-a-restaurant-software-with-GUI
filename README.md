@@ -93,7 +93,7 @@ Chef cannot receive ingredients when cooking.
 
 
 
-## events.txt file (no longer need)
+## events.txt file (no longer needed)
 Format for events file:(Phase 1 only. Already deleted in phase 2)
 
 events.txt: this file records all the events that will be processed by the project.
